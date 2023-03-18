@@ -17,7 +17,7 @@ app.get("/",(req,res) => {
 app.use("/user",userRoutes)
 app.use("/product",productRoutes)
 
-app.listen(process.env.port,async ()=>{
+app.listen(process.env.PORT,async ()=>{
     await connect()
     console.log("server is running on port 8080")
 })
